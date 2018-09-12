@@ -31,13 +31,13 @@ describe('Starting tests for angular-app', function() {
     })
   });
 
-  it('network-name should be tutorial-network2@0.0.1',() => {
+  it('network-name should be tutorial-network@0.0.1',() => {
     element(by.css('.network-name')).getWebElement()
     .then((webElement) => {
       return webElement.getText();
     })
     .then((txt) => {
-      expect(txt).toBe('tutorial-network2@0.0.1.bna');
+      expect(txt).toBe('tutorial-network@0.0.1.bna');
     });
   });
 
